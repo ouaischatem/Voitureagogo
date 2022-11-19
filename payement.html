@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <link href="styles.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+      <meta charset="utf-8">
+      <link rel="icon" type="image/png" href="images/payements.png"/>
+      <title>Payement | Voituragogo</title>
+   </head>
+   <body>
+      <!-- Haut de la page -->
+      <header>
+         <nav class="container mx-auto">
+            <span class="title-header">Voituragogo</span>
+         </nav>
+      </header>
+      <section class="pt-30">
+         <form>
+            <div class="container mx-auto">
+               <div class="wrapper-payement">
+                  <div class="card-personal-informations">
+                     <div class="card">
+                        <div class="card-title">
+                           <span>Informations personnelles</span>
+                           <div class="card-subtitle">
+                              <span>Merci de remplir vos informations personnelles</span>
+                           </div>
+                        </div>
+                        <div class="grid-input">
+                           <div>
+                              <label for="name">Nom</label>
+                              <input type="text" placeholder="Simon Strueux" name="name" required>                      
+                           </div>
+                           <div>
+                              <label for="number">Numéro de téléphone</label>
+                              <input type="tel" placeholder="0123456789" name="number" required>                      
+                           </div>
+                           <div>
+                              <label for="address">Adresse</label>
+                              <input type="text" placeholder="2 rue de la poésie" name="address" required>                      
+                           </div>
+                           <div>
+                              <label for="town">Ville</label>
+                              <input type="text" placeholder="Nantes" name="town" required>                      
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-summary">
+                     <div class="card">
+                        <div class="card-title">
+                           <span>Résumé de la location</span>
+                           <div class="card-subtitle">
+                              <span>Les prix peuvent changer selon la durée de la location et le prix de la voiture.</span>
+                           </div>
+                        </div>
+                        <div class="aligne-items">
+                           <div class="display-car">
+                              <div>
+                                 <img src="images/Look.png">
+                              </div>
+                              <div class="big-title">
+                                 <span>Nissan GT - R</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="simple-line"></div>
+                        <div class="extra-text">
+                           <div class="extra-text-title">
+                              <span>Sous-total</span>
+                           </div>
+                           <div class="extra-text-price">
+                              <span>80€</span>
+                           </div>
+                        </div>
+                        <div class="extra-text">
+                           <div class="extra-text-title">
+                              <span>Taxes</span>
+                           </div>
+                           <div class="extra-text-price">
+                              <span>0€</span>
+                           </div>
+                        </div>
+                        <div class="aligne-items">
+                           <label for="codepromo">Code promotion</label>
+                           <input type="text" placeholder="XXXXX" name="codepromo" required>
+                           <div class="pt-15">
+                              <button type="button" class="promotion-button">
+                              <span>Appliquer</span>
+                              </button>
+                           </div>
+                           <div class="final-price">
+                              <div class="final-price-title">
+                                 <span>Prix total</span>
+                                 <div class="final-price-subtitle">
+                                    <span>Prix total incluant des remises</span>
+                                 </div>
+                              </div>
+                              <div class="final-price-amount">80€</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-location">
+                     <div class="card">
+                        <div class="card-title">
+                           <span>Location</span>
+                           <div class="card-subtitle">
+                              <span>Merci de préciser les dates de location</span>
+                           </div>
+                        </div>
+                        <div class="card-extra-title">
+                           <span>Début de location</span>
+                        </div>
+                        <div class="grid-input">
+                           <div>
+                              <label for="champ-select">Ville</label>
+                              <select id="champ-select" name="villes" required>
+                                 <option disabled selected value="">Sélectionner votre ville</option>
+                                 <option>Paris</option>
+                                 <option>Nantes</option>
+                                 <option>Bordeaux</option>
+                                 <option>Marseille</option>
+                              </select>
+                           </div>
+                           <div>
+                              <label for="datedebut">Date</label>
+                              <input type="date" placeholder="jj / mm / aaaa" name="datedebut" required>                      
+                           </div>
+                           <div>
+                              <label for="houredebut">Heure</label>
+                              <input type="time" placeholder="--:--" name="houredebut" required>                      
+                           </div>
+                        </div>
+                        <div class="card-extra-title">
+                           <span>Fin de location</span>
+                        </div>
+                        <div class="grid-input">
+                           <div>
+                              <label for="champ-select">Ville</label>
+                              <select id="champ-select" name="villes" required>
+                                 <option disabled selected value="">Sélectionner votre ville</option>
+                                 <option>Paris</option>
+                                 <option>Nantes</option>
+                                 <option>Bordeaux</option>
+                                 <option>Marseille</option>
+                              </select>
+                           </div>
+                           <div>
+                              <label for="datefin">Date</label>
+                              <input type="date" placeholder="jj / mm / aaaa" name="datefin" required>                      
+                           </div>
+                           <div>
+                              <label for="hourefin">Heure</label>
+                              <input type="time" placeholder="--:--" name="hourefin" required>                      
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-payement">
+                     <div class="card">
+                        <div class="card-title">
+                           <span>Méthode de paiement</span>
+                           <div class="card-subtitle">
+                              <span>Merci de renseigner vos informations de paiement</span>
+                           </div>
+                        </div>
+                        <div class="payements">
+                           <div class="methode-of-payement">
+                              <div class="methode-of-payement-display">
+                                 <div class="custom-radio">
+                                    <div class="custom-radio-one">
+                                       <input type="radio" name="methode">
+                                       <div class="payement-details">
+                                          <div class="grid-input-payements">
+                                             <div>
+                                                <label for="numbercard">Numéro de carte</label>
+                                                <input type="text" placeholder="1234 5678 1234 5678" name="numbercard" required>
+                                             </div>
+                                             <div>
+                                                <label for="datecard">Date d'expiration</label>
+                                                <input type="date" placeholder="jj / mm / aaaa" name="datecard" required>
+                                             </div>
+                                             <div>
+                                                <label for="nomcard">Nom sur la carte</label>
+                                                <input type="text" placeholder="Simon Strueux" name="nomcard" required>
+                                             </div>
+                                             <div>
+                                                <label for="cvc">CVC</label>
+                                                <input type="text" placeholder="123" name="cvc" required>                      
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="methode-of-payement">
+                              <div class="methode-of-payement-display">
+                                 <div class="custom-radio">
+                                    <div class="custom-radio-one">
+                                       <input type="radio" name="methode">
+                                    </div>
+                                    <div class="custom-radio-two">
+                                       <span>PayPal</span>
+                                    </div>
+                                 </div>
+                                 <div>
+                                    <img src="images/PayPal.svg" alt="">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="methode-of-payement">
+                              <div class="methode-of-payement-display">
+                                 <div class="custom-radio">
+                                    <div class="custom-radio-one">
+                                       <input type="radio" name="methode">
+                                    </div>
+                                    <div class="custom-radio-two">
+                                       <span>Bitcoin</span>
+                                    </div>
+                                 </div>
+                                 <div>
+                                    <img src="images/Bitcoin.svg" alt="">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-confirmation">
+                     <div class="card">
+                        <div class="card-title">
+                           <span>Confirmation</span>
+                           <div class="card-subtitle">
+                              <span>Nous arrivons vers la fin, juste quelques clics et votre location est prête !</span>
+                           </div>
+                        </div>
+                        <div>
+                           <input type="checkbox" id="promo" name="promo">
+                           <label for="promo">J'accepte de recevoir des offres promotionnelles.</label>
+                        </div>
+                        <div>
+                           <input type="checkbox" id="conditions" name="conditions">
+                           <label for="conditions">J'accepte les conditions de vente et la politique privée du site.</label>
+                        </div>
+                        <div class="pt-70">
+                           <div class="aligne-items">
+                              <input type="submit" value="Louer">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </form>
+      </section>
+      <div class="pt-30"></div>
+   </body>
+</html>
